@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* ALL GENERAL STYLING ENTIRE PAGE */
+body {
+	background-color: #2D2D2D;
+	font-family: 'Raleway', sans-serif;
+	color: #ccc;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+}
+
+.container a:hover {
+	transition: color 0.3s ease-in;
+	-o-transition: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	-webkit-transition: color 0.3s ease-in;
+	color: rgba(18, 139, 134, 1) !important;
+}
+
+
+/* END ALL GENERAL STYLING ENTIRE PAGE */
+
+
+/* ALL GENERAL STYLING FOR LOGIN / REGISTER / FORGOT */
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 90vh;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.login {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #222222;
+	width: 20%;
+}
+
+.card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+}
+
+.row {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	width: 90%;
+}
+
+/* ALL GENERAL STYLING FOR LOGIN / REGISTER / FORGOT */
+
+/* LOGIN STYLING */
+
+.top {
+	text-align: center;
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.top::after {
+	content: "Login";
+	font-size: 30px;
+}
+
+.pass {
+	padding-top: 10px;
+	text-align: right;
+	font-size: 17px;
+}
+
+.acc {
+	font-size: 17px;
+}
+
+/* END LOGIN STYLING */
+
+/* RESET PASSWORD STYLING */
+
+.reset {
+	text-align: center;
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.reset::after {
+	content: "Reset Password";
+	font-size: 30px;
+}
+
+.back {
+	font-size: 17px;
+}
+
+/* END RESET PASSWORD STYLING */
+
+/* REEGISTER ACCOUNT STYLING */
+
+.reg {
+	text-align: center;
+	height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.reg::after {
+	content: "Register Account";
+	font-size: 30px;
+}
+
+label {
+	/* for terms of service checkbox */
+	padding-left: 5px;
+}
+
+/* END REGISTER ACCOUNT STYLING */
+
+/* ALL INPUT STYLING */
+input {
+	width: 100%;
+    box-sizing:border-box;
+	font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+	color: #FFFFFF;
+	background-color: #2D2D2D;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #128B86;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+input[type="submit"] {
+	-webkit-appearance: none;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+	-webkit-box-shadow: 0px 0px 7px #128B86;
+	        box-shadow: 0px 0px 7px #128B86;
+	border: 1px solid #128B86;
+}
+
+/* END ALL INPUT STYLING */
+@media only screen and (max-width: 1700px) {
+	.login {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.row p {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.login {
+		width: 50%;
+	}
+
+	.hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h3 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+	.login {
+		width: 75%;
+	}
+
+	.reg::after {
+		font-size: 25px;
+	}
+
+	.reg {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	input {
+		font-size: 13px;
+	}
+
+	.hero h3 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+	.login {
+		width: 80%;
+	}
+
+	form {
+		width: 100%;
+	}
+}
+
+/* END LOGIN, REGISTER, FORGOT PASS FOR MOBILE AND TABLETS */
+
+.hero {
+    text-align: center;
+    color: #fff;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #80a3db;
+}
+
+.hero h1 {
+    font: bold 60px "Raleway";
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font: normal 28px "Raleway";
+    margin-bottom: 40px;
+}
+
+.hero a.btn {
+    padding: 20px 46px;
+    box-shadow: 0px 6px #222;
+    border-radius: 30px;
+
+}
+
+.hero a.btn:hover {
+    -webkit-animation: .5s button forwards;
+            animation: .5s button forwards;
+}
+
+.hero a:hover {
+	transition: color 0.3s ease-in;
+	-o-transition: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	-webkit-transition: color 0.3s ease-in;
+	color: #F06666;
+}
+
+.hero-content-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	margin-top: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-animation: .5s slide .5s forwards;
+            animation: .5s slide .5s forwards;
+}
+
+a.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #2d2d2d;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-webkit-animation: 1.2s large-button .25s ease-in-out;
+            animation: 1.2s large-button .25s ease-in-out;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        margin-top: -50px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        margin-top: -50px;
+    }
+}
+
+@keyframes large-button {
+	50% {
+		opacity: 1;
+		padding: 25px 50px;
+		border-radius: 35px;
+	}
+    100% {
+        padding: 20px 46px;
+		border-radius: 30px;
+    }
+}
+
+@-webkit-keyframes button {
+    100% {
+        box-shadow: 0px 4px #222;
+    }
+}
+
+@keyframes button {
+    100% {
+        box-shadow: 0px 4px #222;
+    }
+}
